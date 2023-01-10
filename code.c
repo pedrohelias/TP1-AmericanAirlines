@@ -10,9 +10,15 @@ typedef struct  {
   int Delay;
 }Data;
 
+typedef struct {
+  int length;
+  int total;
+  int delayed;
+} Subspace;
+
 int main(void) {
 
-int dataSize = 0;
+int dataSize = 1;
 int dataCount = 0;
 Data *data = NULL;
 
@@ -34,47 +40,66 @@ Data *data = NULL;
 
 
   // Lê o arquivo linha por linha e armazena os dados em uma estrutura
-while (1) {
-    if (dataCount >= dataSize) {
-        Data *new;
-        dataSize += 1000;
+
+    while (fgets(line, 1024, fp)) {  
+       Data *new;
         new = realloc(data,dataSize * sizeof *data);
         if (new == NULL) {
             perror("realloc");
             free(data);
             return 2;
         }
-        data = new;
-    }
-    while (fgets(line, 1024, fp)) {     
-    int cnt = fscanf(fp,"%d, %d, %d, %d", &data[dataCount].id, &data[dataCount].Time, &data[dataCount].Length, &data[dataCount].Delay);
+    data = new;  
+    int cnt = fscanf(fp,"%d,%d,%d,%d", &data[dataCount].id, &data[dataCount].Time, &data[dataCount].Length, &data[dataCount].Delay);
+    dataSize++;
+    printf("%d\n", dataSize);
     if (cnt == EOF)
         break;
-    if (cnt != 4) {
-        printf("%d", cnt );
-        printf("Error reading data\n");
-        return 1;
-    }
+    // if (cnt != 4) {
+    //     printf("%d/n", cnt );
+    //     printf("Error reading data\n");
+    //     return 1;
+    // }
     dataCount++;
-     }
-}
+    }
+
 
   // Fecha o arquivo
   fclose(fp);
 
   // Ordena a lista de estruturas por idade com a ordenação por inserção
-  for (int j = 1; j < 600000; j++) {
+  int trial = 0;
+  int minLength = 99999;
+  int maxLength = -99999;
+  for (int j = 1; j < (dataCount - 1)/10; j++){
     Data key = data[j];
+    if(key.Length > maxLength){
+      maxLength = key.Length;
+    }
+    if(key.Length < minLength){
+      minLength = key.Length;
+    }
     int k = j - 1;
-    while (k >= 0 && data[k].Length > key.Length) {
+    while (k >= 0 && data[k].Length > key.Length){
       data[k + 1] = data[k];
+      trial++;
       k--;
     }
     data[k + 1] = key;
   }
 
+  Map<Iteger, Subspace> hash;
+  Subspace sub = hash.get(currentLength);
+  if(fligt.delayd == 1){
+     sub.delay++;
+  }
+  
+  printf("maxLength: %d minLength %d\n", maxLength, minLength);
+  
+  Subspace sb = malloc(10*sizeof(Subspace));
+
   // Imprime as estruturas ordenadas
-  for (int j = 0; j < 600000; j++) {
+  for (int j = 0; j < (dataCount - 1)/10; j++) {
     fprintf(fp_out, "%d,%d,%d,%d\n", data[j].id, data[j].Time, data[j].Length, data[j].Delay);
   }
 
