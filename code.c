@@ -88,15 +88,10 @@ Data *data = NULL;
     data[k + 1] = key;
   }
 
-  Map<Iteger, Subspace> hash;
-  Subspace sub = hash.get(currentLength);
-  if(fligt.delayd == 1){
-     sub.delay++;
-  }
   
   printf("maxLength: %d minLength %d\n", maxLength, minLength);
   
-  Subspace sb = malloc(10*sizeof(Subspace));
+
 
   // Imprime as estruturas ordenadas
   for (int j = 0; j < (dataCount - 1)/10; j++) {
