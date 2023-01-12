@@ -100,6 +100,7 @@ Data *data = NULL;
   fclose(fp_out);
   // Libera a memória alocada para a lista
   free(data);
+  free(spaces);
   return 0;
 }
 
