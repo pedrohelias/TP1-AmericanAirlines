@@ -68,7 +68,7 @@ Data *data = NULL;
   
   clock_t t = clock();
 
-  for (int j = 1; j < (dataCount - 1)/10; j++){
+  for (int j = 1; j < (dataCount - 1)/10; j++){ 
     Data key = data[j];
     
     //addSample(spaces, key.Length, key.Delay);

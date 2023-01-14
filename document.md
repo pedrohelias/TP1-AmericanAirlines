@@ -9,7 +9,7 @@
 |    Data    | Versão |           Descrição           |            Autor(es)             |
 | :--------: | :----: | :---------------------------: | :------------------------------: |
 | 11/01/2023 |  0.1   |     Criação do documento      |           Pedro Helias           |
-
+| 14/01/2023 |  0.2   |     Respondendo últimos problemas e correção em imagens      |           Pedro Helias, Itallo Gravina, Pedro Pagani           |
 
 ## Componentes da Equipe:
 | Nome            | GitHub      | Matrícula |
@@ -33,7 +33,15 @@ O arquivo de sáida do projeto se dá pelo processamento e ordenação da base d
 
 Portanto, temos abaixo uma breve amostragem do arquivo de saída
 
-FOTO ARQUIVO DE SAIDA
+<div align="center">
+
+<b>Figura1:</b> Pequeno trecho do arquivo de saída
+<br>
+<img align='center' height="320" width="320" src="https://github.com/pedrohelias/TP1-AmericanAirlines/blob/pedro/imagens/trecho_saida.png?raw=true">
+<br>
+<b>Fonte:</b> Autoria própria
+
+</div>
 
 ## 3. Complexidade do Algorítimo de Ordenação Escolhida
 
