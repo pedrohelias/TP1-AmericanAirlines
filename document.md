@@ -18,6 +18,7 @@
 |Matheus Do Vale Lameira |[delvale412](https://github.com/delvale412)|202070064|
 | Pedro Helias Carlos |[pedrohelias](https://github.com/pedrohelias) | 140158278 |
 |  Pedro Paulo Monte Pagani  | [PedroMPagani](https://github.com/PedroMPagani) | 211043736 |
+| Rafael | [fhrsiufhsi](fjrsofh) | daiufegfagi|
 
 
 ## 1. Código Fonte da Solução
@@ -25,7 +26,6 @@
 O código fonte da solução se encontra neste <a href="https://github.com/pedrohelias/TP1-AmericanAirlines">repositório</a> nomeado como <b>code.c</b>. A pasta, em que o código se encontra, é composta pela base de dados utilizada(com alterações apenas em colunas não utilizadas para este projeto), nomeada como <b>bancoAjustado4colunas.csv</b> e o executável do projeto, nomeado como <b>code</b> além da documentação, nomeada como <b>document.md</b> e do arquivo de saída gerado pelo código, nomeado por <b>sorted.csv</b>. 
 
 FOTO RODANDO
-
 
 ## 2. Arquivo de Saída
 
@@ -37,6 +37,6 @@ FOTO ARQUIVO DE SAIDA
 
 ## 3. Complexidade do Algorítimo de Ordenação Escolhida
 
-MOSTRAR COMPLEXIDADE
+MOSTRAR COMPLEXIDADE (O[n2])
 
 MOSTRAR TEMPO DE PROCESSAMENTO

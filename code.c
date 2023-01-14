@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 // Estrutura para armazenar os dados de cada linha do arquivo CSV
 typedef struct {
@@ -63,12 +64,14 @@ Data *data = NULL;
   int trial = 0;
   int minLength = 99999;
   int maxLength = -99999;
-  Subspace* spaces = NULL;
+  //Subspace* spaces = NULL;
   
+  clock_t t = clock();
+
   for (int j = 1; j < (dataCount - 1)/10; j++){
     Data key = data[j];
     
-    addSample(spaces, key.Length, key.Delay);
+    //addSample(spaces, key.Length, key.Delay);
     
     if(key.Length > maxLength){
       maxLength = key.Length;
@@ -84,49 +87,23 @@ Data *data = NULL;
     }
     data[k + 1] = key;
   }
+
+  clock_t t2 = clock();
+
   printf("maxLength: %d minLength %d\n", maxLength, minLength);
   // Imprime as estruturas ordenadas
   for (int j = 0; j < (dataCount - 1)/10; j++) {
     fprintf(fp_out, "%d,%d,%d,%d\n", data[j].id, data[j].Time, data[j].Length, data[j].Delay);
   }
   
-  int index = (sizeof(spaces)/sizeof(Subspace));
-  for(int k = 0; k < index; k++){
-    Subspace spc = spaces[k];
-    printf("length: %d, total delayed: %d, total flights %d", spc.length, spc.delayed, spc.total);
-  }
+  t2 = t2 - t;  
   
+   printf("Tempo de execucao: %lf", ((double)t2)/((CLOCKS_PER_SEC/1000))); //conversão para double
+
  // Fecha o arquivo de saída
   fclose(fp_out);
   // Libera a memória alocada para a lista
   free(data);
-  free(spaces);
+  //free(spaces);
   return 0;
-}
-
-void addSample(Subspace* spaces, int length, int delay){
-  int indexes = 0;
-  if(spaces != NULL){
-     indexes = (sizeof(spaces)/sizeof(Subspace));
-  }
-  for(int i = 0; i < indexes; i++){
-    Subspace subp = spaces[i];
-    if(subp.length == length){
-       subp.total++;
-       if(delay == 1){
-          subp.delayed++;
-       }
-       return; // para para nao criar mais espaco em memoria
-    }
-  }
-  Subspace* spc = realloc(spaces ,(indexes + 1) * sizeof(Subspace));
-  Subspace subp = spc[indexes];
-  subp.length = length;
-  subp.total++;
-  if(delay == 1){
-    subp.delayed++;
-  }
-  spaces = spc;
-}
-  
 }
