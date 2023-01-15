@@ -12,13 +12,14 @@
 | 14/01/2023 |  0.2   |     Respondendo últimos problemas e correção em imagens      |           Pedro Helias, Itallo Gravina, Pedro Pagani           |
 
 ## Componentes da Equipe:
+
 | Nome            | GitHub      | Matrícula |
-|-----------------|-------------|-----------|
-|  Itallo Gravina  | [itallogravina](https://github.com/itallogravina) | 160125910|
-|Matheus Do Vale Lameira |[delvale412](https://github.com/delvale412)|202070064|
-| Pedro Helias Carlos |[pedrohelias](https://github.com/pedrohelias) | 140158278 |
+| ----------------- | ------------- | -----------  |
+|  Itallo Gravina  | [itallogravina](https://github.com/itallogravina) | 160125910 | 
+| Matheus Do Vale Lameira | [delvale412](https://github.com/delvale412) | 202070064 |
+| Pedro Helias Carlos | [pedrohelias](https://github.com/pedrohelias) | 140158278 |
 |  Pedro Paulo Monte Pagani  | [PedroMPagani](https://github.com/PedroMPagani) | 211043736 |
-| Rafael | [fhrsiufhsi](fjrsofh) | daiufegfagi|
+| Rafael | teste  | teste |
 
 
 ## 1. Código Fonte da Solução
