@@ -56,7 +56,7 @@ Portanto, temos abaixo uma breve amostragem do arquivo de saída
 <b>Figura2:</b> Tempo de processamento do algoritmo
 <br>
 
-<img align='center' height="320" width="320" src="https://github.com/pedrohelias/TP1-AmericanAirlines/blob/pedro/imagens/tempo.png?raw=true">
+<img align='center' src="https://github.com/pedrohelias/TP1-AmericanAirlines/blob/pedro/imagens/tempo.png?raw=true">
 
 <br>
 <b>Fonte:</b> Autoria própria
