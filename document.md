@@ -45,6 +45,20 @@ Portanto, temos abaixo uma breve amostragem do arquivo de saída
 
 ## 3. Complexidade do Algorítimo de Ordenação Escolhida
 
-MOSTRAR COMPLEXIDADE (O[n2])
+### 3.1. Complexidade
+- Complexidade Quadrática O(N²)
 
-MOSTRAR TEMPO DE PROCESSAMENTO
+### 3.2. Tempo de Processamento
+
+
+<div align="center">
+
+<b>Figura2:</b> Tempo de processamento do algoritmo
+<br>
+
+<img align='center' height="320" width="320" src="https://github.com/pedrohelias/TP1-AmericanAirlines/blob/pedro/imagens/tempo.png?raw=true">
+
+<br>
+<b>Fonte:</b> Autoria própria
+
+</div>
