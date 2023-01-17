@@ -23,7 +23,7 @@
 
 ## 1. Código Fonte da Solução
 
-O código fonte da solução se encontra neste <a href="https://github.com/pedrohelias/TP1-AmericanAirlines">repositório</a> nomeado como <b>code.c</b>. A pasta, em que o código se encontra, é composta pela base de dados utilizada(com alterações apenas em colunas não utilizadas para este projeto), nomeada como <b>bancoAjustado4colunas.csv</b> e o executável do projeto, nomeado como <b>code</b> além da documentação, nomeada como <b>document.md</b> e do arquivo de saída gerado pelo código, nomeado por <b>sorted.csv</b>. 
+O código fonte da solução se encontra neste <a href="https://github.com/pedrohelias/TP1-AmericanAirlines">repositório</a> nomeado como <b>code.c</b>, utilizamos o mesmo para processar 10% da base de dados. O aquivo nomeado <b>codeTotal.c</b> representa o código que utilizamos para processar 100% da base. Basicamente, os códigos são iguais, alterando apenas as limitações que aplicamos para o código rodar 10% da base. A pasta, em que o código se encontra, é composta pela base de dados utilizada(com alterações apenas em colunas não utilizadas para este projeto), nomeada como <b>bancoAjustado4colunas.csv</b> e o executável do projeto, nomeado como <b>code</b> além da documentação, nomeada como <b>document.md</b> e do arquivo de saída gerado pelo código, nomeado por <b>sorted.csv</b>. 
 
 FOTO RODANDO
 
@@ -59,7 +59,7 @@ Portanto, temos abaixo uma breve amostragem do arquivo de saída
 
 <div align="center">
 
-<b>Figura3:</b> Tempo de processamento do algoritmo
+<b>Figura3:</b> Tempo de processamento do algoritmo com 10%
 <br>
 
 <img align='center' src="https://github.com/pedrohelias/TP1-AmericanAirlines/blob/pedro/imagens/tempo.png?raw=true">
@@ -75,3 +75,26 @@ Tempo de execucao apenas dando sort em 53.9k linhas
 
 
 </div>
+
+<br>
+
+<div align="center">
+
+<b>Figura3:</b> Tempo de processamento do algoritmo completo
+<br>
+
+<img align='center' src="https://github.com/pedrohelias/TP1-AmericanAirlines/blob/pedro/imagens/execucaoTotal.png?raw=true">
+
+<br>
+<b>Fonte:</b> Autoria própria
+
+CPU Usada no benchmark\
+\
+i7-1139OH - Stock 3.40Ghz, turbo 5Ghz
+\
+Tempo de execucao apenas dando sort em 53.9k linhas
+
+
+</div>
+
+
