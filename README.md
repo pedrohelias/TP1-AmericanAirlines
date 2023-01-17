@@ -76,11 +76,10 @@ Tempo de execucao apenas dando sort em 53.9k linhas
 
 </div>
 
-<br>
 
 <div align="center">
 
-<b>Figura3:</b> Tempo de processamento do algoritmo completo
+<b>Figura4:</b> Tempo de processamento do algoritmo completo
 <br>
 
 <img align='center' src="https://github.com/pedrohelias/TP1-AmericanAirlines/blob/pedro/imagens/execucaoTotal.png?raw=true">
@@ -96,5 +95,3 @@ Tempo de execucao apenas dando sort em 53.9k linhas
 
 
 </div>
-
-
