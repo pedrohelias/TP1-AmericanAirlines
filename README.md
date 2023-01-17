@@ -19,7 +19,6 @@
 | Matheus Do Vale Lameira | [delvale412](https://github.com/delvale412) | 202070064 |
 | Pedro Helias Carlos | [pedrohelias](https://github.com/pedrohelias) | 140158278 |
 |  Pedro Paulo Monte Pagani  | [PedroMPagani](https://github.com/PedroMPagani) | 211043736 |
-| Rafael | teste  | teste |
 
 
 ## 1. Código Fonte da Solução
@@ -42,6 +41,12 @@ Portanto, temos abaixo uma breve amostragem do arquivo de saída
 <br>
 <b>Fonte:</b> Autoria própria
 
+<b>Figura2:</b> Gráfico
+<br>
+<img align='center' height="320" width="320" src="./imagens/be02ebc6-ae01-48ed-b2ce-ec8bda2110f7.jpg">
+<br>
+<b>Fonte:</b> Autoria própria
+
 </div>
 
 ## 3. Complexidade do Algorítimo de Ordenação Escolhida
@@ -54,12 +59,19 @@ Portanto, temos abaixo uma breve amostragem do arquivo de saída
 
 <div align="center">
 
-<b>Figura2:</b> Tempo de processamento do algoritmo
+<b>Figura3:</b> Tempo de processamento do algoritmo
 <br>
 
 <img align='center' src="https://github.com/pedrohelias/TP1-AmericanAirlines/blob/pedro/imagens/tempo.png?raw=true">
 
 <br>
 <b>Fonte:</b> Autoria própria
+
+CPU Usada no benchmark\
+\
+i7-1139OH - Stock 3.40Ghz, turbo 5Ghz
+\
+Tempo de execucao apenas dando sort em 53.9k linhas
+
 
 </div>
